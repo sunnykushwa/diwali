@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Kali Chaudas</title>
+    <style>
+        /* Background and overall styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(120deg, #ffdf00, #ff9900, #ff3300);
+            font-family: 'Courier New', Courier, monospace;
+            color: #fff;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 90%;
+        }
+
+        /* Decorative diya flame animation */
+        .flame {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        .flame:before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 5px;
+            width: 10px;
+            height: 20px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #ff6600, #ff3300);
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.2); opacity: 1; }
+        }
+
+        /* Styling for main message */
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        /* Keyframe for glowing text effect */
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ffd700, 0 0 20px #ffa500, 0 0 30px #ff4500;
+            }
+            to {
+                text-shadow: 0 0 20px #ffa500, 0 0 30px #ff4500, 0 0 40px #ff6347;
+            }
+        }
+
+        /* Styling for "From Sunny" text */
+        .signature {
+            display: inline-block;
+            font-size: 1.3em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffdd00, #ff9900, #ff3300);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 5px rgba(255, 153, 0, 0.7);
+            animation: colorGlow 2s infinite alternate;
+            margin-top: 5px;
+        }
+
+        @keyframes colorGlow {
+            0% {
+                text-shadow: 0 0 10px #ffd700, 0 0 20px #ff4500;
+            }
+            100% {
+                text-shadow: 0 0 15px #ff9900, 0 0 25px #ff4500;
+            }
+        }
+
+        /* Styling for the button */
+        .celebrate-button {
+            padding: 12px 24px;
+            font-size: 1.1em;
+            color: #ffd700;
+            background: #8b0000;
+            border: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .celebrate-button:hover {
+            background: #a52a2a;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Diya Flames Decoration -->
+        <div>
+            <span class="flame"></span>
+            <span class="flame"></span>
+            <span class="flame"></span>
+            <span class="flame"></span>
+            <span class="flame"></span>
+        </div>
+
+        <!-- Greeting Message -->
+        <h1 id="greeting">Happy Kali Chaudas!</h1>
+        <p class="signature">From Sunny</p>
+       <!-- <p>May this Dhanteras fill your life with wealth, happiness, and prosperity! -->
+    <!--</p> -->
+        
+       
+</body>
+</html>
